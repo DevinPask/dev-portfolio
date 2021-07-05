@@ -1,4 +1,6 @@
 import React from 'react';
+import ghlogo from '../../assets/logos/GitHub.png';
+import lilogo from '../../assets/logos/LI.png';
 
 
 function Footer() {
@@ -8,20 +10,22 @@ function Footer() {
       <div className="logoFooter">
         <ul className="flex-row">
           <li className="mx-2">
-            <a data-testid="about" href="#about">
-              About Me
+            <a data-testid="about" target="blank" href="https://github.com/DevinPask/">
+            <img
+            src={ ghlogo }
+            alt=""
+            className="img-thumbnail mx-1 logo" />
             </a>
           </li>
           <li className="mx-2">
-            <a data-testid="portfoio" href="#portfolio">
-              Portfolio
+            <a data-testid="portfoio" target="blank" href="https://www.linkedin.com/in/devin-pask-2492b388/">
+            <img
+            src={ lilogo }
+            alt=""
+            className="img-thumbnail mx-1 logo" />
             </a>
           </li>
-          <li className="mx-2">
-            <a data-testid="resume" href="#resume">
-              Resume
-            </a>
-          </li>
+          
         </ul>
       </div>
     </footer>

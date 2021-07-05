@@ -27,7 +27,7 @@ function App() {
   return (
     <div>
       <header className="flex-row px-1">
-      <h2>
+      <h2 id="title">
         <a data-testid="link" href="/" onClick={()=> setCurrentPage('Portfolio')}>
         Devin Pask Portfolio
         </a>
