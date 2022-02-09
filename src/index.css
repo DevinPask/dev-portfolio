@@ -1,15 +1,15 @@
 main {
   margin: 0 auto;
   max-width: 90%;
-  padding:  20px;
+  padding: 75px 20px;
 }
 
 :root {
-  --primary: #8c54ff;
+  --primary: linear-gradient(180deg ,#808080ab, #d3d3d3ab);
   --secondary: #f3a847;
   --tertiary: #b12704;
   --light: #fafafa;
-  --dark: linear-gradient(25deg,darkred, rgb(0, 0, 0), rgb(0, 0, 0));
+  --dark: radial-gradient(lightgray, gray, darkgray);
   --darker: #111111;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
@@ -91,16 +91,26 @@ a:hover {
 }
 
 header {
-  background: var(--dark);
+  position: sticky; top: 0;
+  background: linear-gradient(180deg, #000000b8, #00000069);
   display:flex;
   justify-content:space-between;   
-  border-bottom: solid 1px lightgoldenrodyellow;
-  
-  
+  box-shadow: 0px 2px 11px #000000d6;
 }
+
+
 
 header a {
   color: var(--light);
+}
+
+.devLogoContainer {
+  padding-left: 50px;
+}
+
+.devLogo {
+  position: absolute;
+  width: 250px;
 }
 
 button {
@@ -211,7 +221,6 @@ textarea {
 }
 
 .my-5 {
-  margin-top: var(--spacing-five);
   margin-bottom: var(--spacing-five);
 }
 
@@ -246,13 +255,13 @@ textarea {
   margin-bottom: 20px;
   margin-top: 20px;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 
 .underline {
-  color: lightyellow;
-  text-shadow: 5px 2px 5px #504f4f;
-  border-bottom: 5px solid lightskyblue;
+  color: #ffffff;
+  border-bottom: 5px solid #ff5600;
     max-width: 375px;
 }
 
@@ -264,23 +273,32 @@ textarea {
 .portborder {
   padding: 10px;
   margin: 5px;
-  border: solid 1px lightgoldenrodyellow;
-  background: linear-gradient(rgb(36, 34, 34),black);
+  border-radius: 10px;
+  background-color: #00000085;
+  box-shadow: 5px 2px 5px #504f4f91;
 }
 .aboutText {
   display: inline-flex;
 }
 
 .aboutImg {
- width: 50%; 
- height: 50%;
- padding-top: 5px;
+  width: 50%;
+  height: 50%;
+  padding-top: 5px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #00000091;
 }
 
 .aboutP {
   letter-spacing: .01rem;
-  padding-left: 50px;
-  text-align: justify;
+    padding: 20px;
+    text-align: justify;
+    background-color: #000000a8;
+    margin: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #00000091
+
+
 }
 
 .modalBackdrop {
@@ -345,24 +363,27 @@ Footer {
 }
 
 #title {
-  text-shadow: 5px 2px 5px darkred;
 }
 
 .company {
   font-size: 28px;
 }
 .job {
-  color:lightskyblue;
+  color:#ffffff;
 }
 
 .listSpacing {
-  padding-bottom: 50px;
+  background-color: #00000085;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 5px 5px 5px #00000091;
 }
 
 .descrip {
   max-width: 650px;
+  font-weight: 300;
 }
 
 .cats {
-  border-bottom: 5px solid lightskyblue;
+  border-bottom: 5px solid #ff5600;
 }

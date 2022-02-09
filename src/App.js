@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import devLogo from './assets/logos/devLogoWhite@0.5x.png';
 import Resume from './components/Resume';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import ContactForm from './components/Contact';
 import Footer from './components/Footer';
+
 
 function App() {
   const [ currentPage, setCurrentPage ] = useState('Portfolio');
@@ -27,11 +29,14 @@ function App() {
   return (
     <div>
       <header className="flex-row px-1">
-      <h2 id="title">
+      <div className="devLogoContainer">
         <a data-testid="link" href="/" onClick={()=> setCurrentPage('Portfolio')}>
-        Devin Pask Portfolio
+        <img
+            src={ devLogo }
+            alt=""
+            className="devLogo" />
         </a>
-      </h2>
+      </div>
       <nav>
         <ul className="flex-row">
           <li className="mx-2">

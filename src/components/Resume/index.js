@@ -9,12 +9,12 @@ function Resume() {
       <div>
         <ul className="listSpacing">
           <li className="company">Creative Blue</li>
-          <li className="job">Lead Designer</li>
+          <li className="job">Lead Graphic + Web Designer</li>
           <li>Location: San Jose, California, United States</li>
           <li className="descrip">Design Presentaions, Websites, and various Media for customers needs. Also provided Web Development when needed.</li>
         </ul>
         <ul className="listSpacing">
-        <li className="company">Livermore Cyclery</li>
+        <li className="company">Trek Bicycle (formerly Livermore Cyclery)</li>
         <li className="job">Marketing and Media Manager</li>
         <li>Location: San Francisco Bay Area</li>
         <li className="descrip">My position primarily includes producing digital advertising campaigns, online sale, website design, in-store promotional material and display design. I have also worked on the branding of the business with custom designed graphics for clothing and accessories.</li>
@@ -32,7 +32,7 @@ function Resume() {
         <li className="job">Field Of Study: Illustration</li>
         <li className="descrip"></li>
         </ul>
-        <ul classname="listSpacing">
+        <ul className="listSpacing">
         <li className="company">Academy of Art University</li>
         <li className="job">Field Of Study: Illustration</li>
         <li className="descrip">Transitioned to San Jose State University for a more diverse educational background.</li>
